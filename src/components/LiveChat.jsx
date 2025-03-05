@@ -9,7 +9,7 @@ const LiveChat = () => {
    const ChatMessages=useSelector((store)=>store.chat.messages);
     useEffect(()=>{
         const i=setInterval(()=>{
-            console.log("api pollig happens");
+          //  console.log("api pollig happens");
             dispatch(addMessage({
                 name:generate(),
                 message:generateRandomString(10)

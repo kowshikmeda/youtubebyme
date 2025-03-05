@@ -54,7 +54,7 @@ const commentsData=[{
 
 ]
 const Comment=({data})=>{
-    console.log(data);
+    //console.log(data);
     const {name,text,replies}=data;
     return <div className='flex shadow-sm bg-gray-100 rounded p-2 m-1'>
      <img alt='user' className='w-12 h-12'

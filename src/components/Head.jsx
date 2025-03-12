@@ -58,12 +58,12 @@ const Head = () => {
        onFocus={()=>{setShowSuggestions(true)}} 
        onBlur={()=>{setShowSuggestions(false)}}
         />
-        <button className='px-5 py-2 border border-gray-300 rounded-r-full '>Search</button>
+        <button className='px-5 py-2 border border-gray-300 rounded-r-full '>🔍 Search</button>
         </div>
        {showSuggestions && <div className='fixed bg-white py-2 px-5 w-[37rem] rounded-lg shadow-lg border border-gray-200'>
           <ul>
            { suggestions.map((suggestion)=>{
-              return <li key={suggestion}className='py-2 px-3 shadow-sm hover:bg-gray-100'>{suggestion}</li>
+              return <li key={suggestion}className='py-2 px-3 shadow-sm hover:bg-gray-100'>🔍 {suggestion}</li>
             })
           }
             
